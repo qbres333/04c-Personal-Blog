@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,7 @@ body {
     height: 100%;
 }
 
+/* style blog form header */
 h2 {
    
     font-size: 24px;
@@ -35,11 +41,11 @@ h2 {
     background-color: transparent;
     box-shadow: transparent;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-right: 5px;
        
 }
 
-
+/* align light/dark button to the right */
 .header {
     text-align: right;
 }
@@ -70,15 +76,19 @@ h2 {
 
 /* size image on the left */
 .blog-img img {
-    width: 60%;
-    /* position: relative; */
+    width: 50%;
+    height: 62%;
+    align-self: center;
+    position: relative;
    
 
 }
 
 .blog-form {
     width: 50vw;
+    
 }
+
 .blog-entry {
     display: flex;
     flex-direction: column;   
