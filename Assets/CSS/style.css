@@ -35,29 +35,33 @@ h2 {
     background-color: transparent;
     box-shadow: transparent;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
        
 }
 
 
-.header, .main-body {
-    display: flex;
-    flex-direction: row;
-   
+.header {
+    text-align: right;
 }
 
-.header {
-    justify-content: right;
-    border-bottom-style: double;
-    border-bottom-width: 10px;
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    height: 100%;
+    border-top-style: double;
+    border-top-width: 10px;
 }
 
 .blog-img {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
+    width: 50%;
     height: 100%;
     justify-content: center;
+    /* align-items: center; */
     border-right-style: double;
     border-right-width: 10px;
 
@@ -67,21 +71,21 @@ h2 {
 /* size image on the left */
 .blog-img img {
     width: 60%;
+    /* position: relative; */
+   
 
 }
 
-.clear-form {
-    /* display: block; */
-    /* flex-direction: row; */
-
+.blog-form {
+    width: 50vw;
 }
-
 .blog-entry {
     display: flex;
     flex-direction: column;   
     justify-content: center;
 
     background-color: aqua;
+    width: 100%;
     height: 100%; 
     /* vh or percent??? vh creates a scroll bar */
 
@@ -91,12 +95,12 @@ h2 {
     margin: 20px;
 }
 
-
+/* 
 .clear-form {
 
     width: 100%;
   
-}
+} */
 
 input, div button {
     display: flex;
@@ -116,6 +120,9 @@ input, div button {
     margin-bottom: 10px;
 }
 
+input #content {
+    line-height: 10vh;
+}
 
 div button {    
    
