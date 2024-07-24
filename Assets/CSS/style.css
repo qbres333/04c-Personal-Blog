@@ -86,7 +86,32 @@ h2 {
 
 
 /* Dark Mode */
+.dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
 
+.dark .main-body {
+    color: white;
+    border-top-style: double;
+    border-top-width: 10px;
+}
+
+
+.dark .blog-img {
+    border-right-style: double;
+    border-right-width: 10px;
+}
+
+.dark div button {
+    color: black;
+    background-color: white;
+}
+
+.dark header button:hover {
+    background-color: white;
+}
 
 
 
