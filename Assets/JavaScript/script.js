@@ -1,4 +1,4 @@
-// Access mode button HTML element
+// access mode button HTML element
 const themeSwitcher = document.querySelector('#light-dark-mode');
 const container = document.querySelector('.container');
 
@@ -20,7 +20,10 @@ themeSwitcher.addEventListener('click', function () {
   }
 });
 
-// access blog content fields
+// access blog entry fields
 const blogUser = document.querySelector('#username');
 const blogTitle = document.querySelector('#blog-title');
 const blogContent = document.querySelector('#content');
+const submitBtn = document.querySelector('#submit');
+
+

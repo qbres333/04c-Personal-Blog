@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog Log</title>
-    <link rel="stylesheet" href="Assets/CSS/bloglist.css">
+    <link rel="stylesheet" href="../CSS/bloglist.css">
 </head>
 
-<body>
+<body class="container light">
     <!-- header with light/dark mode button -->
     <header class="header">
-      <button id="light-dark-mode">🌞</button>
+        <h1>My First Blog</h1>
+        <button id="back-to-main">← Back</button>
+        <button id="light-dark-mode">🌞</button>
     </header>
     
     <main class="main-body">
-   
-
+    <!-- -------------- list of blogs ----------------- -->
+     <div class="blog-list">
+        <ul clas="list" id="list">
+<!-- create list of blog objects -->
+        </ul>
+        
+     </div>
 
     </main>
-  <script src="Assets/JavaScript/script.js"></script>
+
+    <section class="footer">
+        <h3>Powered by 🍰 &copy; 2024</h3>
+        <ul class="footer-notes">
+            <li>Portfolio: <a href="https://qbres333.github.io/02-Portfolio/">qbres333</a></li>
+            <li>Blog: TBD</li>
+            <li>Email: <a href="mailto:qbres333@hotmail.com">qbres333@hotmail.com</a></li>
+        </ul>
+    </section>
+
+  <script src="../JavaScript/script.js"></script>
 </body>
 </html>
