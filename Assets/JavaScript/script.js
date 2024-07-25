@@ -26,4 +26,20 @@ const blogTitle = document.querySelector('#blog-title');
 const blogContent = document.querySelector('#content');
 const submitBtn = document.querySelector('#submit');
 
+// save blog entry object locally
+submitBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  
+  // create blogPost object for submission
+  const blogPost = {
+    blogUser: blogUser.value,
+    blogTitle: blogTitle.value,
+    blogContent: blogContent.value.trim()
+  };
+
+  // Store new blog post in local storage
+  localStorage.setItem('blogPost', JSON.stringify(blogPost));
+
+});
+
 

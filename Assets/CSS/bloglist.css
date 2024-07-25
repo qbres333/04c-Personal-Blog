@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
+/* set height here to make the header & main-body heights work */
 html, body {
     height: 100%;
     margin: 0;
 }
 
+/* make the webpage a flex container */
 body {
     display: flex;
     flex-direction: column;
@@ -18,36 +20,48 @@ body {
       
 }
 
+/* make the main-body a flex container where elements align horizontally */
 .main-body {
     display: flex;    
     flex-direction: row;
-    align-items: center; /* working but main body is too short */
+    align-items: center; 
   
     height: 100%;
 }
 
 
+/* align header elements */
+.header {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    height: 50px;
+    /* margin: 0px; */
+}
+
+.blog-name {
+    
+    align-self: center;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
 /* style the light/dark mode button */
 .header button {
+    /* display: flex; */
     border-color: transparent;
     background-color: transparent;
     box-shadow: transparent;
     font-size: 20px;
     margin-right: 5px;
-       
+    /* justify-content: end; */
+    /* text-align: right; */
+    /* align-items: end; */
+    
 }
 
-/* align header elements */
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.blog-name {
-    text-align: left;
-}
 
 /* Light Mode */
 .light {
@@ -180,14 +194,20 @@ div button {
 
 }
 
+.footer {
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
 .footer ul {
     font-size: 12px;
     text-align: left;
     list-style-type: none;
-}
-.footer {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-
+    margin-top: 0px;
+    margin-left: -30px;
 }
