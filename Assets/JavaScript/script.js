@@ -30,7 +30,7 @@ const submitBtn = document.querySelector('#submit');
 submitBtn.addEventListener('click', function (event) {
   event.preventDefault();
   
-  // create blogPost object for submission
+  // store blog entry data as an object 
   const blogPost = {
     blogUser: blogUser.value,
     blogTitle: blogTitle.value,
@@ -39,6 +39,8 @@ submitBtn.addEventListener('click', function (event) {
 
   // Store new blog post in local storage
   localStorage.setItem('blogPost', JSON.stringify(blogPost));
+
+
 
 });
 
