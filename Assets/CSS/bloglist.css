@@ -194,6 +194,13 @@ div button {
 
 }
 
+
+.card {
+    /* add to light mode */
+    border-color: black;
+    border-width: 1px;
+}
+
 .footer {
     width: 100%;
     text-align: center;
