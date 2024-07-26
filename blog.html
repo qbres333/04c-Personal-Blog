@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog Log</title>
-    <link rel="stylesheet" href="../CSS/bloglist.css">
+    <link rel="stylesheet" href="./Assets/CSS/bloglist.css">
 </head>
 
 <body class="container light">
     <!-- header with light/dark mode button -->
     <header class="header">
         <h1 class="blog-name">My First Blog</h1>
-        <button id="back-to-main" type="reset" onclick="location.href='../../index.html'">← Back</button>
+        <button id="back-to-main" ><a href="../../index.html">← Back</a></button>
         <button id="light-dark-mode">🌞</button>
     </header>
     
@@ -19,7 +19,14 @@
     <!-- -------------- list of blogs ----------------- -->
 
      <div class="card">
-        <ul id="entry-list"></ul>
+        <ul id="entry-list">
+            
+<!-- 
+            <li id="blog-title"></li>
+            <li id="content"></li>
+            <li id="username"></li>
+             -->
+        </ul>
         
      </div>
 
@@ -46,7 +53,7 @@
             <li>Email: <a href="mailto:qbres333@hotmail.com">qbres333@hotmail.com</a></li>
         </ul>
     </section>
-
-  <script src="../JavaScript/script.js"></script>
+<!-- change JS file -->
+  <script src="./Assets/JavaScript/blog.js"></script>
 </body>
 </html>

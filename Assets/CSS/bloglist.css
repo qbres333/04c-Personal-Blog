@@ -86,11 +86,22 @@ body {
 }
 
 
-.light .footer {
+.light .footer, .light .header {
     color: black;
 }
 
+.light .card {
+    border-color: black;
+    border-width: 1px;
+}
 
+.light .header button a {
+    color: black;
+}
+
+.light .footer ul li a {
+    color: black;
+}
 
 /* Dark Mode */
 .dark {
@@ -103,6 +114,8 @@ body {
     color: white;
     border-top-style: double;
     border-top-width: 10px;
+    border-bottom-style: double;
+    border-bottom-width: 10px;
 }
 
 
@@ -118,6 +131,23 @@ body {
 
 .dark header button:hover {
     background-color: white;
+}
+
+.dark .footer, .dark .header {
+    color: white;
+}
+
+.dark .card {
+    border-color: white;
+    border-width: 1px;
+}
+
+.dark .header button a {
+    color: white;
+}
+
+.dark .footer ul li a {
+    color: white;
 }
 
 
@@ -177,6 +207,7 @@ input, textarea, div button {
     padding: 8px;       
     width: 100%;
     height: 100%;  
+    font-size: 15px;
 }
 
 .input, .header {
@@ -196,6 +227,8 @@ div button {
 
 
 .card {
+    display: block;
+
     /* add to light mode */
     border-color: black;
     border-width: 1px;
